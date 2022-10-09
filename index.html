@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <div class="notification">
+      <header
+        class="notification__header d-flex align-items-center justify-content-between"
+      >
+        <p class="notification__txt">
+          Notifications
+          <span class="notification__count" id="notification">3</span>
+        </p>
+        <button class="notification__btn" id="btn-readall">
+          Mark all as read
+        </button>
+      </header>
+      <div class="notification__body">
+        <ul class="notification__list">
+          <li class="card">
+            <div class="d-flex">
+              <figure class="card__figure">
+                <img
+                  class="card__avatar"
+                  src="./assets/images/avatar-mark-webber.webp"
+                  alt="mark webber"
+                  width="39"
+                  height="39"
+                />
+              </figure>
+              <div class="card__body">
+                <div class="d-flex">
+                  <div>
+                    <div>
+                      <p class="card__txt">
+                        <span class="card__name">Mark Webber</span>
+                        reacted to your recent post
+                        <span class="card__link"
+                          >My first tournament today!</span
+                        >
+                        <span class="card__state"></span>
+                      </p>
+                    </div>
+                    <small class="card__time">1m ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="card">
+            <div class="d-flex">
+              <figure class="card__figure">
+                <img
+                  class="card__avatar"
+                  src="./assets/images/avatar-angela-gray.webp"
+                  alt="angela gray"
+                  width="39"
+                  height="39"
+                />
+              </figure>
+              <div class="card__body">
+                <div class="d-flex">
+                  <div>
+                    <div>
+                      <p class="card__txt">
+                        <span class="card__name">Angela Gray</span>
+                        followed you
+                        <span class="card__state"></span>
+                      </p>
+                    </div>
+                    <small class="card__time">1m ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="card">
+            <div class="d-flex">
+              <figure class="card__figure">
+                <img
+                  class="card__avatar"
+                  src="./assets/images/avatar-jacob-thompson.webp"
+                  alt="jacob thompson"
+                  width="39"
+                  height="39"
+                />
+              </figure>
+              <div class="card__body">
+                <div class="d-flex">
+                  <div>
+                    <div>
+                      <p class="card__txt">
+                        <span class="card__name">Jacob Thompson</span>
+                        has joined your group
+                        <span class="card__link">Chess Club</span>
+                        <span class="card__state"></span>
+                      </p>
+                    </div>
+                    <small class="card__time">1day ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="card viewed">
+            <div class="d-flex">
+              <figure class="card__figure">
+                <img
+                  class="card__avatar"
+                  src="./assets/images/avatar-rizky-hasanuddin.webp"
+                  alt="rizky hasanuddin"
+                  width="39"
+                  height="39"
+                />
+              </figure>
+              <div class="card__body">
+                <div class="d-flex">
+                  <div>
+                    <div>
+                      <p class="card__txt">
+                        <span class="card__name">Rizky Hasanuddin</span>
+                        sent you a private message
+                        <span class="card__state"></span>
+                      </p>
+                    </div>
+                    <small class="card__time">5 days ago</small>
+                  </div>
+                </div>
+                <div class="card__message mt-3">
+                  <p class="card__message-txt">
+                    Hello, thanks for setting up the Chess Club. I've been a
+                    member for a few weeks now and I'm already having lots of
+                    fun and improving my game
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="card viewed">
+            <div class="d-flex">
+              <figure class="card__figure">
+                <img
+                  class="card__avatar"
+                  src="./assets/images/avatar-kimberly-smith.webp"
+                  alt="kimberly smith"
+                  width="39"
+                  height="39"
+                />
+              </figure>
+              <div class="card__body">
+                <div class="d-flex">
+                  <div>
+                    <div>
+                      <p class="card__txt">
+                        <span class="card__name">Kimberly Smith</span>
+                        commented on your picture
+                        <span class="card__state"></span>
+                      </p>
+                    </div>
+                    <small class="card__time">1 week ago</small>
+                  </div>
+                  <div class="ms-auto">
+                    <img
+                      class="card__img"
+                      src="./assets/images/image-chess.webp"
+                      alt=""
+                      width="39"
+                      height="39"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="card viewed">
+            <div class="d-flex">
+              <figure class="card__figure">
+                <img
+                  class="card__avatar"
+                  src="./assets/images/avatar-nathan-peterson.webp"
+                  alt="nathan peterson"
+                  width="39"
+                  height="39"
+                />
+              </figure>
+              <div class="card__body">
+                <div class="d-flex">
+                  <div>
+                    <div>
+                      <p class="card__txt">
+                        <span class="card__name">Nathan Peterson</span>
+                        reacted to your recent post
+                        <span class="card__link"
+                          >5 end-game strategies to increase your win rate</span
+                        >
+                        <span class="card__state"></span>
+                      </p>
+                    </div>
+                    <small class="card__time">2 weeks ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="card viewed">
+            <div class="d-flex">
+              <figure class="card__figure">
+                <img
+                  class="card__avatar"
+                  src="./assets/images/avatar-anna-kim.webp"
+                  alt="anna kim"
+                  width="39"
+                  height="39"
+                />
+              </figure>
+              <div class="card__body">
+                <div class="d-flex">
+                  <div>
+                    <div>
+                      <p class="card__txt">
+                        <span class="card__name">Anna Kim</span>
+                        left the group
+                        <span class="card__link">Chess Club</span>
+                        <span class="card__state"></span>
+                      </p>
+                    </div>
+                    <small class="card__time">2 weeks ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
